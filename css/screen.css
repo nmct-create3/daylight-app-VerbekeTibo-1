@@ -41,6 +41,8 @@ html {
   font-family: 'Work Sans', sans-serif;
   box-sizing: border-box;
   background-color: var(--color-back);
+  color: var(--color-front);
+  
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -253,7 +255,11 @@ input::placeholder {
 /*------------------------------------*\
 #COMPONENTS
 \*------------------------------------*/
-
+.c-bottom {
+    position: absolute;
+    bottom: 0;
+    max-width: 400px;
+  }
 /*
     Component: Logo
     ---
@@ -310,7 +316,7 @@ input::placeholder {
 }
 
 .c-horizon__line {
-  border-top: 1px solid #000;
+  border-top: 1px solid var(--color-front);
   padding-top: 8px;
   display: flex;
   justify-content: space-between;
@@ -326,6 +332,8 @@ input::placeholder {
   height: 200px;
   overflow: hidden;
   padding: 22px 40px 0 0;
+  
+
 }
 
 .c-horizon__sky {
